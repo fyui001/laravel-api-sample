@@ -1,0 +1,10 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+parameters:
+    level: 2
+    paths:
+        - app
+    ignoreErrors:
+        - '#Access to an undefined property#'
+        - '#Result of method Illuminate\\Foundation\\Exceptions\\Handler::renderForConsole\(\) \(void\) is used.#'
+        - '#Anonymous function has an unused use \$exception.#'
